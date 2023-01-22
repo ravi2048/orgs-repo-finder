@@ -12,7 +12,7 @@ const contextDefaultValues: DataContextType = {
 
 export const DataContext = createContext<DataContextType>(contextDefaultValues);
 
-const DataContextProvider: FC = (props:any) => {
+const DataContextProvider: FC<Props> = ({children}) => {
   const [globalData, setGlobalData] = useState<ICompleteResponse[]>(
     contextDefaultValues.globalData
   );
@@ -22,7 +22,7 @@ const DataContextProvider: FC = (props:any) => {
   };
   return (
     <DataContext.Provider value={{ globalData, updateGlobalData }}>
-      {props.children}
+      {children}
     </DataContext.Provider>
   );
 };
