@@ -1,0 +1,33 @@
+.master-detail {
+  .details {
+    position: absolute;
+    top: 10rem;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+    .back-button {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      margin-left: 10px;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin-bottom: 50px;
+      list-style-type: none;
+    }
+    li {
+      padding: 10px;
+      border-bottom: 1px solid lightgray;
+    }
+  }
+}
